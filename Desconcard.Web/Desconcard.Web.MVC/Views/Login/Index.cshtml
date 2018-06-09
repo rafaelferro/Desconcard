@@ -1,0 +1,42 @@
+﻿
+@model Desconcard_web.Models.login_Models.Usuario
+@{
+    ViewBag.Title = "Login";
+}
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "login", FormMethod.Post))
+{
+    //cria a tag do formulário
+    @Html.AntiForgeryToken() // previne o ataque CSRF
+    @Html.ValidationSummary(true)
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+    }
+    <table>
+        <tr>
+            <td>@Html.LabelFor(a => a.Desc_email_usuario)</td>
+            <td>@Html.TextBoxFor(a => a.Desc_email_usuario)</td>
+            <td>@Html.ValidationMessageFor(a => a.Desc_email_usuario)</td>
+        </tr>
+        <tr>
+            <td> @Html.LabelFor(a => a.Desc_Senha)</td>
+            <td> @Html.PasswordFor(a => a.Desc_Senha) </td>
+            <td> @Html.ValidationMessageFor(a => a.Desc_Senha) </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Login" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+
+}
+<br/>
+
+@Html.ActionLink("Cadastre - se Aqui","Index","Cadastro")

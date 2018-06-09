@@ -1,0 +1,16 @@
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\obj\Debug\Desconcard.Boleto.csprojAssemblyReference.cache
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\obj\Debug\Desconcard.Boleto.csproj.CoreCompileInputs.cache
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Desconcard.Boleto.dll.config
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Desconcard.Boleto.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Desconcard.Boleto.pdb
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Boleto2Net.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Desconcard.Data.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\MySql.Data.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Boleto2Net.pdb
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Desconcard.Data.pdb
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\Desconcard.Data.dll.config
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\obj\Debug\Desconcard.Boleto.csproj.CopyComplete
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\obj\Debug\Desconcard.Boleto.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Boleto\obj\Debug\Desconcard.Boleto.pdb

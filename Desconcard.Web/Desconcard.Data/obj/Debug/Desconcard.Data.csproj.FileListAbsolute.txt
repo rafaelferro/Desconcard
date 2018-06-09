@@ -1,0 +1,9 @@
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\obj\Debug\Desconcard.Data.csprojAssemblyReference.cache
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\obj\Debug\Desconcard.Data.csproj.CoreCompileInputs.cache
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\bin\Debug\Desconcard.Data.dll.config
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\bin\Debug\Desconcard.Data.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\bin\Debug\Desconcard.Data.pdb
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\bin\Debug\MySql.Data.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\obj\Debug\Desconcard.Data.csproj.CopyComplete
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\obj\Debug\Desconcard.Data.dll
+C:\Users\rferr\source\repos\Desconcard.Web\Desconcard.Data\obj\Debug\Desconcard.Data.pdb
