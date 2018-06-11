@@ -223,14 +223,14 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Cadastro\CadEstabelecimento.cshtml" />
-    <Content Include="Views\Cadastro\Index.cshtml" />
+    <Content Include="Views\Estabalecimento\CadEstabelecimento.cshtml" />
+    <Content Include="Views\Estabalecimento\Index.cshtml" />
     <Content Include="Views\_ViewImports.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\CadastroController\" />
-    <Folder Include="Views\CadEstabalecimento\" />
+    <Folder Include="Views\Associacao\" />
+    <Folder Include="Views\Socio\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

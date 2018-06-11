@@ -10,7 +10,7 @@ namespace Desconcard.Web.MVC.Controllers
     {
         public ActionResult Index()
         {
-            Response.Redirect("Cadastro/Index");
+            Response.Redirect("Index");
             return View();
         }
 

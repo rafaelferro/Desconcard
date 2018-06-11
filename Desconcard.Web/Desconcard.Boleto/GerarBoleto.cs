@@ -23,8 +23,14 @@ namespace Desconcard.Boleto
 
             //Cabeçalho
             boletos.Banco = Banco.Instancia(104);
+
+            CedenteBoleto cedenteB = new CedenteBoleto();
+            DataTable B = cedenteB.RecCedente();
+
             boletos.Banco.Cedente = new Cedente
-            {
+            {           
+
+
                 CPFCNPJ = "",
                 Nome = "",
                 Observacoes = string.Empty,
@@ -47,13 +53,13 @@ namespace Desconcard.Boleto
                 CodigoTransmissao = string.Empty,
                 Endereco = new Boleto2Net.Endereco
                 {
-                    LogradouroEndereco = "Rua Sete De Setembro",
-                    LogradouroNumero = "97",
+                    LogradouroEndereco = "",
+                    LogradouroNumero = "",
                     LogradouroComplemento = "",
-                    Bairro = "Jardin Itapevi",
-                    Cidade = "Itapevi",
-                    UF = "SP",
-                    CEP = "06653-170"
+                    Bairro = "",
+                    Cidade = "",
+                    UF = "",
+                    CEP = ""
                 }
             };
 
