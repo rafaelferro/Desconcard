@@ -17,31 +17,35 @@ namespace Desconcard.Boleto
 
         Boletos boletos = null;
 
-        public GerarBoleto()
+        public GerarBoleto(string conex)
         {
             boletos = new Boletos();
 
-            //Cabeçalho
-            boletos.Banco = Banco.Instancia(104);
+            CedenteBoleto cedenteB = new CedenteBoleto(conex);
+            cedenteB.RecCedente();
 
-            CedenteBoleto cedenteB = new CedenteBoleto();
-            DataTable B = cedenteB.RecCedente();
+            //Cabeçalho
+            boletos.Banco = Banco.Instancia(Convert.ToInt32(cedenteB.Id_Banco));
+
+            if (cedenteB.Operador_Conta == null || cedenteB.Operador_Conta == string.Empty || cedenteB.Operador_Conta == "")
+                cedenteB.Operador_Conta = string.Empty;
+
 
             boletos.Banco.Cedente = new Cedente
-            {           
+            {
 
 
-                CPFCNPJ = "",
-                Nome = "",
+                CPFCNPJ = cedenteB.CPFCNPJ,
+                Nome = cedenteB.Beneficiario,
                 Observacoes = string.Empty,
                 ContaBancaria = new ContaBancaria
                 {
-                    Agencia = "",
+                    Agencia = cedenteB.Id_Agencia,
                     DigitoAgencia = "",
-                    OperacaoConta = "",
-                    Conta = "",
-                    DigitoConta = "",
-                    CarteiraPadrao = "",
+                    OperacaoConta = cedenteB.Operador_Conta,
+                    Conta = cedenteB.Id_Conta,
+                    DigitoConta = cedenteB.Digito_Conta,
+                    CarteiraPadrao = cedenteB.carteira,
                     VariacaoCarteiraPadrao = "",
                     TipoCarteiraPadrao = TipoCarteira.CarteiraCobrancaSimples,
                     TipoFormaCadastramento = TipoFormaCadastramento.ComRegistro,
@@ -53,13 +57,13 @@ namespace Desconcard.Boleto
                 CodigoTransmissao = string.Empty,
                 Endereco = new Boleto2Net.Endereco
                 {
-                    LogradouroEndereco = "",
-                    LogradouroNumero = "",
+                    LogradouroEndereco = cedenteB.logradouro,
+                    LogradouroNumero = cedenteB.logradouroNumero,
                     LogradouroComplemento = "",
-                    Bairro = "",
-                    Cidade = "",
-                    UF = "",
-                    CEP = ""
+                    Bairro = cedenteB.bairro,
+                    Cidade = cedenteB.cidade,
+                    UF = cedenteB.uf,
+                    CEP = cedenteB.cep
                 }
             };
 

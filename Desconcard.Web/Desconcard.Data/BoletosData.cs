@@ -10,9 +10,17 @@ namespace Desconcard.Data
 {
    public class BoletosData
     {
+        string conex;
+        public BoletosData(
+            string DB
+            )
+        {
+            conex = DB;
+        }
+
         public DataSet recuperarValorBoletoPorusuario(int cod)
         {
-                        var connString = "Server=localhost;Database=desconcard;Uid=root;Pwd=root";
+            var connString = conex;
             var connection = new MySqlConnection(connString);
             var command = connection.CreateCommand();
             MySqlDataAdapter boletos = new MySqlDataAdapter();
@@ -34,6 +42,10 @@ namespace Desconcard.Data
             catch (Exception e)
             {
                 throw new Exception("Erro ao gerar boleto " + e.Message);
+            }
+            finally
+            {
+                connection.Close();
             }
 
             return ds;

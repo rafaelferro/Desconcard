@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +10,40 @@ namespace Desconcard.Data
 {
    public class CedenteData
     {
-        public string CPFCNPJ = "29153382000175";
-        public string Nome = "Centro de Apoio Aos Guardas,Servidores,Fuincionario Publicos E Da Privada de Itapevi-Sp - Casp";
-        public string Agencia = "1228";
+     
+        public DataSet recContaCentente(string conex)
+        {
+            var connString = conex;
+            var connection = new MySqlConnection(connString);
+            var command = connection.CreateCommand();
+            MySqlDataAdapter boletos = new MySqlDataAdapter();
+            DataSet ds = new DataSet();
+
+            try
+            {
+                connection.Open();
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.CommandText = "Sel_Cedente";
+
+                boletos.SelectCommand = command;
+                boletos.Fill(ds);
+
+                return ds;
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
         public string DigitoAgencia = "";
-        public string OperacaoConta = "003";
-        public string Conta = "2401";
-        public string DigitoConta = "2";
+        public string OperacaoConta = "";
+        public string Conta = "";
+        public string DigitoConta = "";
         public string CarteiraPadrao;
         public string Codigo;
         public string CodigoDV;
