@@ -10,6 +10,7 @@ namespace Desconcard.Data
 {
    public class BoletosData
     {
+        public int ControleBoleto;
         string conex;
         public BoletosData(
             string DB
@@ -50,6 +51,39 @@ namespace Desconcard.Data
 
             return ds;
         } 
+
+        public int NumeroBoletoControleData(int Cliente)
+        {
+            var connString = conex;
+            var connection = new MySqlConnection(connString);
+            var command = connection.CreateCommand();
+            MySqlDataAdapter boletos = new MySqlDataAdapter();
+            DataSet ds = new DataSet();
+
+            try
+            {
+                connection.Open();
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.CommandText = "Sp_Sel_Valor_Boleto_Socio";
+
+                boletos.SelectCommand = command;
+                boletos.Fill(ds);
+
+                //MySqlDataReader boleto = command.ExecuteReader();
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro ao gerar boleto " + e.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return ControleBoleto;
+
+        }
 
     }
 }

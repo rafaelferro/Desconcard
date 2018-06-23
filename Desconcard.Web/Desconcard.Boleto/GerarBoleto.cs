@@ -16,6 +16,7 @@ namespace Desconcard.Boleto
     {
 
         Boletos boletos = null;
+        BoletoControle bControle = null;
 
         public GerarBoleto(string conex)
         {
@@ -98,7 +99,10 @@ namespace Desconcard.Boleto
             boleto.CodigoOcorrencia = "01"; //Registrar remessa
             boleto.DescricaoOcorrencia = "Remessa Registrar";
 
-            boleto.NumeroDocumento = "04";
+            bControle = new BoletoControle();
+            bControle.NumeroBoleto(Convert.ToInt32(row[5]));
+
+            boleto.NumeroDocumento = bControle.NumeroBoletoControle.ToString(); 
             boleto.NumeroControleParticipante = "04";
             boleto.NossoNumero = "401";
 

@@ -43,11 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CedenteBoleto.cs" />
+    <Compile Include="BoletoControle.cs" />
     <Compile Include="GerarBoleto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Users\rferr\Documents\boleto2net-master\boleto2net-master\Boleto2.Net\Boleto2.Net.csproj">
+    <ProjectReference Include="..\boleto2net-master\Boleto2.Net\Boleto2.Net.csproj">
       <Project>{f173e80b-e36b-48ad-b483-a27f8ca86f3c}</Project>
       <Name>Boleto2.Net</Name>
     </ProjectReference>
