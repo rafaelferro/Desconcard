@@ -12,6 +12,7 @@ namespace Desconcard.Data
     {
         public int ControleBoleto;
         string conex = Configuration.DBConection;
+        DataSet ds = new DataSet();
 
 
         public DataSet recuperarValorBoletoPorusuario(int cod)
@@ -20,8 +21,7 @@ namespace Desconcard.Data
             var connection = new MySqlConnection(connString);
             var command = connection.CreateCommand();
             MySqlDataAdapter boletos = new MySqlDataAdapter();
-            DataSet ds = new DataSet();
-
+  
             try
             {
                 connection.Open();
@@ -32,7 +32,6 @@ namespace Desconcard.Data
                 boletos.SelectCommand = command;
                 boletos.Fill(ds);
 
-                //MySqlDataReader boleto = command.ExecuteReader();
 
             }
             catch (Exception e)
@@ -47,24 +46,27 @@ namespace Desconcard.Data
             return ds;
         } 
 
-        public int NumeroBoletoControleData(int Cliente)
+        public int NumeroBoletoControleData(int Cliente, decimal valor, int Mes, int Ano)
         {
             var connString = conex;
             var connection = new MySqlConnection(connString);
             var command = connection.CreateCommand();
             MySqlDataAdapter boletos = new MySqlDataAdapter();
-            DataSet ds = new DataSet();
+           
 
             try
             {
                 connection.Open();
                 command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.CommandText = "Sp_Sel_Valor_Boleto_Socio";
+                command.CommandText = "Sp_Insert_Boleto";
+                command.Parameters.AddWithValue("ID_Socio", Cliente);
+                command.Parameters.AddWithValue("Valor", valor);
+                command.Parameters.AddWithValue("Mes", Mes);
+                command.Parameters.AddWithValue("Ano", Ano);
 
                 boletos.SelectCommand = command;
                 boletos.Fill(ds);
 
-                //MySqlDataReader boleto = command.ExecuteReader();
 
             }
             catch (Exception e)

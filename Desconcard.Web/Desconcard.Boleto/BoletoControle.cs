@@ -7,10 +7,10 @@ namespace Desconcard.Boleto
     {
        public  int NumeroBoletoControle = 5;
 
-        public void NumeroBoleto(int CLiente)
+        public void NumeroBoleto(int CLiente, decimal valor, int Mes, int Ano)
         {
             BoletosData boletosData = new BoletosData();
-            NumeroBoletoControle = boletosData.NumeroBoletoControleData(CLiente);
+            NumeroBoletoControle = boletosData.NumeroBoletoControleData(CLiente, valor, Mes, Ano);
         }
     }
 }

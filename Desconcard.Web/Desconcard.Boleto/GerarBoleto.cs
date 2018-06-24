@@ -99,11 +99,9 @@ namespace Desconcard.Boleto
             boleto.CodigoOcorrencia = "01"; //Registrar remessa
             boleto.DescricaoOcorrencia = "Remessa Registrar";
 
-            bControle = new BoletoControle();
+           
 
-            boleto.NumeroDocumento = bControle.NumeroBoletoControle.ToString(); 
-            boleto.NumeroControleParticipante = bControle.NumeroBoletoControle.ToString();
-            boleto.NossoNumero = "401";
+           
 
             boleto.DataEmissao = DateTime.Today;
             boleto.DataVencimento = boleto.DataEmissao.AddDays(10);
@@ -115,6 +113,14 @@ namespace Desconcard.Boleto
             //boleto.ValorDesconto = 0;
             decimal ValorMulta = Convert.ToDecimal(row[4])/10;
             decimal precMulta = 02;
+
+            bControle = new BoletoControle();
+            bControle.NumeroBoleto(Convert.ToInt32(row[0].ToString()), boleto.ValorTitulo, boleto.DataEmissao.Month, boleto.DataEmissao.Year);
+
+
+            boleto.NumeroDocumento = bControle.NumeroBoletoControle.ToString();
+            boleto.NumeroControleParticipante = bControle.NumeroBoletoControle.ToString();
+            boleto.NossoNumero = "401";
             if (ValorMulta > 0)
             {
                 boleto.DataMulta = boleto.DataVencimento.AddDays(1);
