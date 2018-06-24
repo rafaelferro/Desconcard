@@ -15,19 +15,16 @@ namespace Desconcard.Console.Geral
 
         static void Main(string[] args)
         {
-            Global global = new Global();
-            string conex = global.DBConection;
-
             BoletoValores boletoValores = new BoletoValores();
             DataSet ds = new DataSet();
 
-            ds = boletoValores.recValores(conex);
+            ds = boletoValores.recValores();
             
 
             if (ds.Tables[0].Rows.Count > 0)
             {
                 IntegraBoleto integra = new IntegraBoleto();
-                integra.GeraBoleto(ds, conex);
+                integra.GeraBoleto(ds);
             }
 
         }

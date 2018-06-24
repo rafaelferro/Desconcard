@@ -11,11 +11,11 @@ namespace Desconcard.Console
     class BoletoValores
     {
 
-        public DataSet recValores(string DB)
+        public DataSet recValores()
         {
             DataSet valores = new DataSet();
 
-            BoletosData boletos = new BoletosData(DB);
+            BoletosData boletos = new BoletosData();
 
 
             valores = boletos.recuperarValorBoletoPorusuario(2); 

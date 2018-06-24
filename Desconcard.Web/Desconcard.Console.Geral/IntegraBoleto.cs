@@ -10,9 +10,9 @@ namespace Desconcard.Console.Geral
         {
         }
 
-        internal void GeraBoleto(DataSet ds, string conex)
+        internal void GeraBoleto(DataSet ds)
         {
-            GerarBoleto gerarBoleto = new GerarBoleto(conex);
+            GerarBoleto gerarBoleto = new GerarBoleto();
 
             foreach(DataRow row in ds.Tables[0].Rows)
             {

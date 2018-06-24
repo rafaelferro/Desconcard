@@ -11,13 +11,8 @@ namespace Desconcard.Data
    public class BoletosData
     {
         public int ControleBoleto;
-        string conex;
-        public BoletosData(
-            string DB
-            )
-        {
-            conex = DB;
-        }
+        string conex = Configuration.DBConection;
+
 
         public DataSet recuperarValorBoletoPorusuario(int cod)
         {

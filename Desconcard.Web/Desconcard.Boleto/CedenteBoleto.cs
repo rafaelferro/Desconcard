@@ -17,7 +17,6 @@ namespace Desconcard.Boleto
         public string CPFCNPJ;
         public string Beneficiario;
         public string carteira = "SIG14";
-        private string conex;
         public string logradouro;
         public string logradouroNumero;
         public string bairro;
@@ -25,19 +24,13 @@ namespace Desconcard.Boleto
         public string uf;
         public string cep;
 
-        public CedenteBoleto(string conexao)
-        {
-            conex = conexao;
-        }
-
-
-
+       
         public void RecCedente()
         {
             try
             {
                 Desconcard.Data.CedenteData cedenteData = new Data.CedenteData();
-                dt = cedenteData.recContaCentente(conex);
+                dt = cedenteData.recContaCentente();
 
                 foreach(DataRow row in dt.Tables[0].Rows)
                 {

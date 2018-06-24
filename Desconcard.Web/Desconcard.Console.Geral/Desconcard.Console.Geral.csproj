@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoletoValores.cs" />
-    <Compile Include="Global.cs" />
     <Compile Include="IntegraBoleto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

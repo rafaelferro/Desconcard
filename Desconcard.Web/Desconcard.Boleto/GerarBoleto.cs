@@ -18,11 +18,11 @@ namespace Desconcard.Boleto
         Boletos boletos = null;
         BoletoControle bControle = null;
 
-        public GerarBoleto(string conex)
+        public GerarBoleto()
         {
             boletos = new Boletos();
 
-            CedenteBoleto cedenteB = new CedenteBoleto(conex);
+            CedenteBoleto cedenteB = new CedenteBoleto();
             cedenteB.RecCedente();
 
             //Cabeçalho
@@ -100,10 +100,9 @@ namespace Desconcard.Boleto
             boleto.DescricaoOcorrencia = "Remessa Registrar";
 
             bControle = new BoletoControle();
-            bControle.NumeroBoleto(Convert.ToInt32(row[5]));
 
             boleto.NumeroDocumento = bControle.NumeroBoletoControle.ToString(); 
-            boleto.NumeroControleParticipante = "04";
+            boleto.NumeroControleParticipante = bControle.NumeroBoletoControle.ToString();
             boleto.NossoNumero = "401";
 
             boleto.DataEmissao = DateTime.Today;

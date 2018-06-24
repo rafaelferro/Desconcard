@@ -10,8 +10,10 @@ namespace Desconcard.Data
 {
    public class CedenteData
     {
-     
-        public DataSet recContaCentente(string conex)
+        string conex = Configuration.DBConection;
+
+
+        public DataSet recContaCentente()
         {
             var connString = conex;
             var connection = new MySqlConnection(connString);
