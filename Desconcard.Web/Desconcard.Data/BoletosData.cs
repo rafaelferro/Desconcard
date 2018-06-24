@@ -17,6 +17,7 @@ namespace Desconcard.Data
 
         public DataSet recuperarValorBoletoPorusuario(int cod)
         {
+
             var connString = conex;
             var connection = new MySqlConnection(connString);
             var command = connection.CreateCommand();
@@ -65,9 +66,13 @@ namespace Desconcard.Data
                 command.Parameters.AddWithValue("Ano", Ano);
 
                 boletos.SelectCommand = command;
-                boletos.Fill(ds);
 
+                MySqlDataReader dr;
 
+                dr = command.ExecuteReader();
+                dr.Read();
+
+                ControleBoleto = Convert.ToInt32(dr["Id_boleto"].ToString());
             }
             catch (Exception e)
             {

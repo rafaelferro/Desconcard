@@ -5,7 +5,7 @@ namespace Desconcard.Boleto
 {
     public class BoletoControle
     {
-       public  int NumeroBoletoControle = 5;
+       public  int NumeroBoletoControle;
 
         public void NumeroBoleto(int CLiente, decimal valor, int Mes, int Ano)
         {
