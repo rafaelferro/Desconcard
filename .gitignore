@@ -1,3 +1,5 @@
 
 *.config
 *.config
+Desconcard.Web/Desconcard.Data/app.config
+*.config
