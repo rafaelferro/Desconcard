@@ -36,3 +36,5 @@ C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\obj\Debug\Desconcard.C
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\obj\Debug\Desconcard.Console.Geral.csproj.CopyComplete
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\obj\Debug\Desconcard.Console.Geral.exe
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\obj\Debug\Desconcard.Console.Geral.pdb
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\bin\Debug\Desconcard.Email.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\bin\Debug\Desconcard.Email.pdb

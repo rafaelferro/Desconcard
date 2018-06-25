@@ -63,6 +63,10 @@
       <Project>{52de21b4-c0d0-43c0-9466-9166b22be8a1}</Project>
       <Name>Desconcard.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Desconcard.Email\Desconcard.Email.csproj">
+      <Project>{35bb4a81-2911-4396-bfca-412c774ef3fb}</Project>
+      <Name>Desconcard.Email</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

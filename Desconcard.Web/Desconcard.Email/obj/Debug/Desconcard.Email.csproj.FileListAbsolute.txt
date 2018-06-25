@@ -1,0 +1,6 @@
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Email\bin\Debug\Desconcard.Email.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Email\bin\Debug\Desconcard.Email.pdb
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Email\obj\Debug\Desconcard.Email.csprojAssemblyReference.cache
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Email\obj\Debug\Desconcard.Email.csproj.CoreCompileInputs.cache
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Email\obj\Debug\Desconcard.Email.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Email\obj\Debug\Desconcard.Email.pdb

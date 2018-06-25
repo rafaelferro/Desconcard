@@ -17,6 +17,7 @@ namespace Desconcard.Boleto
 
         Boletos boletos = null;
         BoletoControle bControle = null;
+        public string pathPDF;
 
         public GerarBoleto()
         {
@@ -176,7 +177,7 @@ namespace Desconcard.Boleto
             {
                 var boletoBancario = new BoletoBancario() { Boleto = boleto1 };
                 var pdf = boletoBancario.MontaBytesPDF(false);
-                string pathPDF = @"C:\Teste\" + boleto.NumeroControleParticipante + ".pdf";
+                pathPDF = @"C:\Teste\" + boleto.Sacado.Nome + " - " + boleto.DataEmissao.Month + "-" +  boleto.DataEmissao.Year + ".pdf";
                 File.WriteAllBytes(pathPDF, pdf);
             }
         }
