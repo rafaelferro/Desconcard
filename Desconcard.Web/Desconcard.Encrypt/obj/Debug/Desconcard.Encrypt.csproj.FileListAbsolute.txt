@@ -1,0 +1,6 @@
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Encrypt\bin\Debug\Desconcard.Encrypt.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Encrypt\bin\Debug\Desconcard.Encrypt.pdb
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Encrypt\obj\Debug\Desconcard.Encrypt.csprojAssemblyReference.cache
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Encrypt\obj\Debug\Desconcard.Encrypt.csproj.CoreCompileInputs.cache
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Encrypt\obj\Debug\Desconcard.Encrypt.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Encrypt\obj\Debug\Desconcard.Encrypt.pdb

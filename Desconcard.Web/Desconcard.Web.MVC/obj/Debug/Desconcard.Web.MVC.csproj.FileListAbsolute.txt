@@ -177,3 +177,9 @@ C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\obj\Debug\Desconcard.Web.MVC
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\obj\Debug\Desconcard.Web.MVC.csproj.CopyComplete
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\obj\Debug\Desconcard.Web.MVC.dll
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\obj\Debug\Desconcard.Web.MVC.pdb
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\bin\Desconcard.Data.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\bin\Desconcard.Encrypt.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\bin\Desconcard.Data.pdb
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\bin\Desconcard.Data.dll.config
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\bin\Desconcard.Encrypt.pdb
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Web.MVC\bin\MySql.Data.dll

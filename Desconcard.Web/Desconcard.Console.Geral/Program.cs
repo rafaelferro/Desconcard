@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Configuration;
+using Desconcard.Encrypt;
 
-
-namespace Desconcard.Console.Geral
+namespace Desconcard.Geral
 {
     class Program
     {
@@ -19,14 +19,13 @@ namespace Desconcard.Console.Geral
             DataSet ds = new DataSet();
 
             ds = boletoValores.recValores();
-            
+
 
             if (ds.Tables[0].Rows.Count > 0)
             {
                 IntegraBoleto integra = new IntegraBoleto();
                 integra.GeraBoleto(ds);
             }
-
         }
     }
 }

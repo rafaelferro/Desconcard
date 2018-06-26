@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Desconcard.Data;
 
-namespace Desconcard.Console
+namespace Desconcard.Geral
 {
     class BoletoValores
     {

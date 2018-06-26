@@ -3,7 +3,7 @@ using System.Data;
 using Desconcard.Boleto;
 using Desconcard.Email;
 
-namespace Desconcard.Console.Geral
+namespace Desconcard.Geral
 {
     internal class IntegraBoleto
     {

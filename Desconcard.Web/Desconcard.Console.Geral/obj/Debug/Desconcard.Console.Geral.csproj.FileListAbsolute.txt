@@ -38,3 +38,5 @@ C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\obj\Debug\Desconcard.C
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\obj\Debug\Desconcard.Console.Geral.pdb
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\bin\Debug\Desconcard.Email.dll
 C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\bin\Debug\Desconcard.Email.pdb
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\bin\Debug\Desconcard.Encrypt.dll
+C:\Git\Desconcard\Desconcard.Web\Desconcard.Console.Geral\bin\Debug\Desconcard.Encrypt.pdb

@@ -7,13 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desconcard.Boleto", "Descon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desconcard.Web.MVC", "Desconcard.Web.MVC\Desconcard.Web.MVC.csproj", "{2423A2B5-C48D-4D25-A3AC-C714D91197C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desconcard.Console.Geral", "Desconcard.Console.Geral\Desconcard.Console.Geral.csproj", "{50D84B9D-A6CF-436E-A55E-B2AD8EE220DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desconcard.Geral", "Desconcard.Console.Geral\Desconcard.Geral.csproj", "{50D84B9D-A6CF-436E-A55E-B2AD8EE220DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desconcard.Data", "Desconcard.Data\Desconcard.Data.csproj", "{52DE21B4-C0D0-43C0-9466-9166B22BE8A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boleto2.Net", "boleto2net-master\Boleto2.Net\Boleto2.Net.csproj", "{F173E80B-E36B-48AD-B483-A27F8CA86F3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desconcard.Email", "Desconcard.Email\Desconcard.Email.csproj", "{35BB4A81-2911-4396-BFCA-412C774EF3FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desconcard.Encrypt", "Desconcard.Encrypt\Desconcard.Encrypt.csproj", "{958CC2CF-398E-45C8-9A4A-626B34B8E75B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,22 @@ Global
 		{35BB4A81-2911-4396-BFCA-412C774EF3FB}.Release|x64.Build.0 = Release|Any CPU
 		{35BB4A81-2911-4396-BFCA-412C774EF3FB}.Release|x86.ActiveCfg = Release|Any CPU
 		{35BB4A81-2911-4396-BFCA-412C774EF3FB}.Release|x86.Build.0 = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|x64.Build.0 = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Debug|x86.Build.0 = Debug|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|ARM.Build.0 = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|x64.ActiveCfg = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|x64.Build.0 = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|x86.ActiveCfg = Release|Any CPU
+		{958CC2CF-398E-45C8-9A4A-626B34B8E75B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
